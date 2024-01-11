@@ -1,0 +1,56 @@
+create database parking;
+
+use parking;
+
+create table reg
+( 
+CustomerId varchar(30),
+fname varchar(50),
+lname varchar(50),
+emailid  varchar(50),
+password varchar(50),
+contact varchar(50),
+address varchar(50),
+primary key(CustomerId));
+
+create table feedback
+( 
+slno varchar(30),
+customername varchar(50),
+cnum varchar(50),
+rating varchar(20),
+Fdate varchar(20),
+primary key(slno));
+
+
+create table checkavaa
+( 
+Id varchar(30),
+areaname varchar(50),
+slot varchar(50),
+date  varchar(50),
+primary key(Id));
+
+create table carexi
+( 
+Id varchar(30),
+carnumber  varchar(50),
+slot varchar(50),
+date  varchar(50),
+Description varchar(50),
+primary key(Id));
+
+
+create table parking
+( 
+parkingId varchar(30),
+ownername varchar(50),
+contact varchar(30),
+carnumber  varchar(50),
+slot varchar(50),
+date  varchar(50),
+primary key(parkingId));
+
+Create table admin(username varchar(30), password varchar(30));
+
+insert into admin values('admin','admin');
